@@ -13,24 +13,19 @@
         "code review"
     ],
     "require": {
-        "phpcompatibility/php-compatibility": "^9.1",
-        "squizlabs/php_codesniffer": "3.0.0 - 3.5.6",
+        "phpcompatibility/php-compatibility": "9.3.5",
+        "squizlabs/php_codesniffer": "3.5.8",
         "phpro/grumphp": "^v1.3.1",
         "drupal/coder": "8.3.12"
     },
     "require-dev": {
         "openeuropa/task-runner": "^1.0.0-beta6",
-        "phpunit/phpunit": ">=3.7 <6",
-        "phpmd/phpmd": "@stable"
+        "phpunit/phpunit": "9.5.2",
+        "phpmd/phpmd": "2.9.1"
     },
     "autoload": {
         "psr-0": {
             "QualityAssurance\\": "phpcs/QualityAssurance/"
-        }
-    },
-    "patches": {
-        "phpro/grumphp": {
-            "MULTISITE-24256: Apply patch for grumphp issue - Large amount of files.": "./patches/grumphp_large_amount_of_files.patch"
         }
     },
     "autoload-dev": {
